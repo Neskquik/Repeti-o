@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Senha {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int senhaCorreta = 2002;
+        int senha;
+
+        System.out.print("Digite a Senha: ");
+        
+        do {
+            senha = sc.nextInt();
+            if (senha != senhaCorreta) {
+                System.out.println("Senha Invalida");
+            }
+        } while (senha != senhaCorreta);
+
+        System.out.println("Senha Certa");
+        sc.close();
+    }
+}
